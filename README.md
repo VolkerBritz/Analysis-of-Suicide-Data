@@ -1,5 +1,9 @@
 # Analysis-of-Suicide-Data
 
+I provide an analysis of suicide data available from Kaggle (the data originates with the WHO). I focus on cross-country differences in the ratio of suicides by men vs. women. It turns out that this statistic is strongly correlated with the gap in life expectancy, but only less strongly related to factors such as the incidence of depression.
+
+
+
 
 Four datasets are used for this project:
 
