@@ -1,9 +1,25 @@
-# Analysis-of-Suicide-Data
+# Analysis of Suicide Data
 
-I provide an analysis of suicide data available from Kaggle (the data originates with the WHO). I focus on cross-country differences in the ratio of suicides by men vs. women. It turns out that this statistic is strongly correlated with the gap in life expectancy, but only less strongly related to factors such as the incidence of depression.
+## Content
+
+I provide an analysis of data about suicides, life expectancy, and mental health, as well as Gross National Income across various countries. The analysis focuses on the factor by which suicides by men outnumber those by women ("male preponderance in suicides").
+
+Annual data is available across different countries for the time period from 1985 to 2015. A first exploration suggests that both the size of male preponderance in suicides as well as changes over time differ widely across the various countries considered. Hence, instead of focusing on developments over time, I focus on the 2013 data: Choosing that particular year is compromise between having data that is complete and also fairly recent. For many countries in the dataset, more recent numbers are missing.
+
+I create a map of the world which visualizes cross-country differences in the male preponderance in suicides. Inspecting this visualization yields some first clues: For instance, one observation is that male preponderance in suicides is particularly pronounced in some Central and Eastern European countries which are often said to have a particularly low (male) life expectancy. Another observation is that some countries that are known for having a particularly high Human Development Index (Scandinavian countries, Japan) score low on male preponderance in suicides. 
+
+Starting from such observations, I dig deeper by combining suicide data with data on life expectancy, mental health, and Gross National Income. I visualize correlations between all these variables in a heatmap and perform linear regression. The following conclusions emerge:
+
+1. Countries with high male preponderance in suicides tend to be countries in which the life expectancy of men relative to that of women is low. This finding is consistent with the idea that suicide and early death are driven by a common factors: For instance, a tendency to commit suicide could be related to a tendency towards other "slower" methods of self-destruction (drug use, alcohol). 
+
+2. Male preponderance in suicides is associated with more freqent diagnoses of depression in men. This is consistent with the idea that suitable access to treatment for depression is effective against suicides.
+
+3. Countries with higher Gross National Income tend to have lower male preponderance in suicides. This is consistent with the initial observation that male preponderance in suicides tends to be low in countries that are known for their high level of human development. (I use Gross National Income instead of Human Development Index here because life expectancy data is also used as an explanatory variable, but it is also one of the factors that make up the Human Development Index.)
+
+4. Somewhat surprisingly, the regression analysis reveals that male preponderance in suicides is more closely associated with male relative life expectancy than it is with the data on depression. 
 
 
-
+## Acknowledgment of Data Sources
 
 Four datasets are used for this project:
 
